@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+
+    <div class="add-form">
+      <div>
+        <input
+          type="text"
+          class="add-form-search-input"
+          id="addInput"
+          placeholder="Fruits or Legumes"
+        />
+      </div>
+      <div>
+        <input
+          type="radio"
+          class="add-form-radio"
+          name="frLg"
+          id="fruitsRadio"
+        />
+        <span for="fruits">Fruits</span>
+        <input
+          type="radio"
+          class="add-form-radio"
+          name="frLg"
+          id="legumesRadio"
+        />
+        <span for="legumes">Legumes</span>
+      </div>
+      <div style="justify-content: flex-end">
+        <button style="background-color: blue" id="AddSpecificButton">
+          Add to specific list
+        </button>
+        <button style="background-color: orangered" id="AddGeneralButton">
+          Add to general list
+        </button>
+      </div>
+    </div>
+    <div class="lists-conatiner">
+      <div class="header">
+        <div>
+          <button
+            style="background-color: rgb(116, 116, 255); color: rgb(79, 67, 67)"
+            id="searchButton"
+          >
+            Search for iteem
+          </button>
+          <button style="background-color: orangered" id="deleteButton">
+            Delete an item
+          </button>
+        </div>
+        <div>
+          <input
+            type="text"
+            id="searchDeleteInput"
+            placeholder="Search for a fruits or Legumes"
+          />
+        </div>
+      </div>
+      <hr />
+      <div class="lists">
+        <div class="titles">
+          <h3>List of Fruits</h3>
+          <h3>List of Fruits & Legumes</h3>
+          <h3>List of Legumes</h3>
+        </div>
+        <div class="list-fruits" id="listFruits">
+          <li id="fruit1">Fruits! - Apple</li>
+          <li id="fruit2">Fruits! - Mangoes</li>
+        </div>
+        <div class="list-both" id="listBoth">
+          <li id="both1">Fruits! - Pineapples</li>
+          <li id="both2">Fruits! - Bananas</li>
+          <li id="both3">Legumes! - Potato</li>
+          <li id="both4">Legumes! - Lentills</li>
+        </div>
+        <div class="list-legumes" id="listLegumes">
+          <li id="legumes1">Legumes! - Broccoli</li>
+          <li id="legumes2">Legumes! - Green Beans</li>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
